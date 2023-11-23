@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/1823/1823324.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+    <title>Moonlight Odyssey</title>
+  </head>
+  <body class="bg-slate-900 text-white">
+    <header id="main-header" class="absolute top-0 z-10 w-full -translate-y-full duration-1000" data-scroll-animate="top">
+      <nav id="main-navbar" class="container mx-auto flex min-h-[80px] flex-wrap items-center justify-between gap-4 p-4 px-4">
+        <a href="/" id="logo" class="flex items-center gap-4 whitespace-nowrap">
+          <img src="https://cdn-icons-png.flaticon.com/128/1823/1823324.png" alt="Moonlight Odyssey Logo" width="48" height="48" />
+          <span class="font-bold md:text-4xl">Moonlight Odyssey</span>
+        </a>
+        <!-- <button id="menu-toggle" class="md:hidden">
+          <span class="sr-only">Menu Toggle</span>
+          =
+        </button> -->
+        <ul class="flex items-center justify-center gap-4 whitespace-nowrap">
+          <!-- max-md:fixed max-md:top-full max-md:w-full max-md:bg-white max-md:p-4 -->
+          <li>
+            <a
+              href="/"
+              class="relative py-1 after:absolute after:bottom-0 after:left-[50%] after:h-[2px] after:w-0 after:bg-green-400 after:transition-[width_0.3s_ease_0s,left_0.3s_ease_0s] after:content-[''] hover:text-green-400 hover:after:left-0 hover:after:w-full"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#destinations"
+              class="relative py-1 after:absolute after:bottom-0 after:left-[50%] after:h-[2px] after:w-0 after:bg-green-400 after:transition-[width_0.3s_ease_0s,left_0.3s_ease_0s] after:content-[''] hover:text-green-400 hover:after:left-0 hover:after:w-full"
+              >Destinations</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="relative py-1 after:absolute after:bottom-0 after:left-[50%] after:h-[2px] after:w-0 after:bg-green-400 after:transition-[width_0.3s_ease_0s,left_0.3s_ease_0s] after:content-[''] hover:text-green-400 hover:after:left-0 hover:after:w-full"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#packages"
+              class="relative py-1 after:absolute after:bottom-0 after:left-[50%] after:h-[2px] after:w-0 after:bg-green-400 after:transition-[width_0.3s_ease_0s,left_0.3s_ease_0s] after:content-[''] hover:text-green-400 hover:after:left-0 hover:after:w-full"
+              >Packages</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="#contact"
+              class="relative py-1 after:absolute after:bottom-0 after:left-[50%] after:h-[2px] after:w-0 after:bg-green-400 after:transition-[width_0.3s_ease_0s,left_0.3s_ease_0s] after:content-[''] hover:text-green-400 hover:after:left-0 hover:after:w-full"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero" class="relative grid min-h-[100dvh] w-full place-items-center py-16">
+      <div class="absolute -z-10 h-full w-full bg-gradient-to-b from-transparent via-transparent to-slate-900"><span class="sr-only">gradient</span></div>
+      <img
+        class="absolute -z-20 h-full w-full select-none object-cover brightness-75"
+        draggable="false"
+        src="https://images.unsplash.com/photo-1514897575457-c4db467cf78e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="container mx-auto grid items-center gap-4 px-4 md:grid-cols-2">
+        <img
+          src="https://img.freepik.com/free-photo/beautiful-glowing-gray-full-moon_181624-59870.jpg?w=826&t=st=1700032300~exp=1700032900~hmac=b26d328ffc4b3c55b0dc936155cc18a0e4d0f74852b97b3e848bcf573d6eb142"
+          alt=""
+          class="-translate-x-full select-none opacity-0 mix-blend-lighten transition-all duration-1000"
+          draggable="false"
+          data-scroll-animate="left"
+        />
+        <div class="space-y-4 opacity-0 transition-all duration-1000" data-scroll-animate="fade">
+          <h1 class="text-2xl font-black md:text-5xl"><span class="text-green-400">Moonlight Odyssey</span> Your Ultimate Lunar Adventure</h1>
+          <h2 class="text-lg font-bold md:text-2xl">Experience the enchanting beauty of the moon like never before.</h2>
+          <p>
+            Join us on a celestial journey that transcends ordinary travel. Dive into the ethereal glow of moonlight, where every adventure is a story written
+            in the stars.
+          </p>
+          <a
+            href="#packages"
+            class="border-input inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md border bg-transparent px-4 py-2 text-sm font-medium ring-offset-white transition-colors hover:bg-green-400 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+            >Book Today!</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations" class="grid min-h-[100dvh] place-items-center py-16">
+      <div class="container mx-auto space-y-4 px-4">
+        <h2 class="text-center text-4xl font-bold text-green-400">Explore Lunar Destinations</h2>
+        <p class="mx-auto max-w-prose text-center">
+          Discover our handpicked destinations where the moon's allure is at its peak. From the serene Lunar Plains to the mystical Crater Canyons, each
+          location offers a unique celestial experience.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 [&>*]:basis-[max(30rem,(100%-2rem)/3)]">
+          <div class="translate-y-full overflow-hidden rounded-lg bg-slate-950/90 opacity-0 transition-all duration-1000" data-scroll-animate="bottom">
+            <div class="aspect-video w-full overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1514897575457-c4db467cf78e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1vb24lMjBhbmQlMjBtb3VudGFpbnN8ZW58MHx8MHx8fDA%3D"
+                alt=""
+                class="h-full w-full cursor-pointer object-cover transition-transform duration-300 hover:scale-125"
+              />
+            </div>
+            <div class="space-y-4 p-4">
+              <h3 class="text-2xl font-bold text-green-400">Lunar Plains</h3>
+              <p>Immerse yourself in the tranquility of vast lunar landscapes, where the soft glow of moonlight creates a mesmerizing ambiance.</p>
+              <a
+                href="#packages"
+                class="ring-offset-background focus-visible:ring-ring border-input inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md border bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-green-400 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+              >
+                Book
+              </a>
+            </div>
+          </div>
+          <div
+            class="translate-y-full overflow-hidden rounded-lg bg-slate-950/90 opacity-0 transition-all delay-[500ms] duration-1000"
+            data-scroll-animate="bottom"
+          >
+            <div class="aspect-video w-full overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1515311320503-6e3d309537b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vb24lMjBhbmQlMjBtb3VudGFpbnN8ZW58MHx8MHx8fDA%3D"
+                alt=""
+                class="h-full w-full cursor-pointer object-cover transition-transform duration-300 hover:scale-125"
+              />
+            </div>
+            <div class="space-y-4 p-4">
+              <h3 class="text-2xl font-bold text-green-400">Crater Canyons</h3>
+              <p>Explore the mysterious canyons carved by ancient lunar forces, unveiling secrets of the moon's history with every step.</p>
+              <a
+                href="#packages"
+                class="ring-offset-background focus-visible:ring-ring border-input inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md border bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-green-400 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+              >
+                Book
+              </a>
+            </div>
+          </div>
+          <div
+            class="translate-y-full overflow-hidden rounded-lg bg-slate-950/90 opacity-0 transition-all delay-[1000ms] duration-1000"
+            data-scroll-animate="bottom"
+          >
+            <div class="aspect-video w-full overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1539667468225-eebb663053e6?q=80&w=2017&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="h-full w-full cursor-pointer object-cover transition-transform duration-300 hover:scale-125"
+              />
+            </div>
+            <div class="space-y-4 p-4">
+              <h3 class="text-2xl font-bold text-green-400">Galactic Oasis</h3>
+              <p>A hidden oasis on the moon's surface, surrounded by reflective pools that capture the brilliance of the stars.</p>
+              <a
+                href="#packages"
+                class="ring-offset-background focus-visible:ring-ring border-input inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md border bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-green-400 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+              >
+                Book
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="grid min-h-[100dvh] place-items-center py-16">
+      <div class="absolute -z-10 h-full w-full bg-gradient-to-b from-slate-900 via-transparent to-slate-900"><span class="sr-only">gradient</span></div>
+      <img
+        class="absolute -z-20 h-full w-full select-none object-cover brightness-75"
+        draggable="false"
+        src="https://images.unsplash.com/photo-1528919880398-4af90c12ac1e?q=80&w=1937&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="container mx-auto grid items-center gap-4 px-4 md:grid-cols-2">
+        <div class="space-y-4 opacity-0 duration-1000" data-scroll-animate="fade">
+          <h2 class="text-4xl font-bold text-green-400">About Us</h2>
+          <p>
+            At Moonlight Odyssey, we are passionate about creating extraordinary lunar experiences. Our team of space enthusiasts ensures every detail of your
+            trip is celestial perfection. Our mission is to share the magic of the moon with fellow explorers, fostering a deep connection between humanity and
+            the cosmos.
+          </p>
+          <a
+            href="#packages"
+            class="ring-offset-background focus-visible:ring-ring border-input inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md border bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-green-400 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+          >
+            Book Now!
+          </a>
+        </div>
+        <img
+          src="https://img.freepik.com/free-photo/landscape-shot-white-full-moon-with-black-color-background_181624-11907.jpg?w=1380&t=st=1700053303~exp=1700053903~hmac=62c97d59e54715c5dab8dfd50a5f2efed9d48c41ac8dba8031a9f31f56b267c2"
+          alt=""
+          class="translate-x-full rounded-lg opacity-0 mix-blend-lighten duration-1000"
+          data-scroll-animate="right"
+        />
+      </div>
+    </section>
+
+    <section id="packages" class="grid min-h-[100dvh] place-items-center py-16">
+      <div class="container mx-auto grid place-items-center gap-4 px-4">
+        <h2 class="text-4xl font-bold text-green-400">Packages</h2>
+        <p class="max-w-prose text-center">
+          Choose from our curated packages designed to make your moon viewing trip unforgettable. Whether it's a weekend lunar escape or an extended cosmic
+          adventure, we have the perfect package for you.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 [&>*]:basis-[max(30rem,(100%-2rem)/3)]">
+          <div class="translate-y-full overflow-hidden rounded-lg bg-slate-950/90 opacity-0 transition-all duration-1000" data-scroll-animate="bottom">
+            <div class="aspect-video w-full overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1514897575457-c4db467cf78e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1vb24lMjBhbmQlMjBtb3VudGFpbnN8ZW58MHx8MHx8fDA%3D"
+                alt=""
+                class="h-full w-full cursor-pointer object-cover transition-transform duration-300 hover:scale-125"
+              />
+            </div>
+            <div class="space-y-4 p-4">
+              <h3 class="text-2xl font-bold text-green-400">Starry Serenity Package</h3>
+              <p>A weekend retreat to the Lunar Plains, including guided moonlit meditation and stargazing sessions.</p>
+              <a
+                href="#packages"
+                class="ring-offset-background focus-visible:ring-ring border-input inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md border bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-green-400 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+              >
+                Book
+              </a>
+            </div>
+          </div>
+          <div
+            class="translate-y-full overflow-hidden rounded-lg bg-slate-950/90 opacity-0 transition-all delay-[500ms] duration-1000"
+            data-scroll-animate="bottom"
+          >
+            <div class="aspect-video w-full overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1515311320503-6e3d309537b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vb24lMjBhbmQlMjBtb3VudGFpbnN8ZW58MHx8MHx8fDA%3D"
+                alt=""
+                class="h-full w-full cursor-pointer object-cover transition-transform duration-300 hover:scale-125"
+              />
+            </div>
+            <div class="space-y-4 p-4">
+              <h3 class="text-2xl font-bold text-green-400">Galactic Explorer Package</h3>
+              <p>Embark on a week-long journey through Crater Canyons, combining lunar hiking and celestial photography.</p>
+              <a
+                href="#packages"
+                class="ring-offset-background focus-visible:ring-ring border-input inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md border bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-green-400 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+              >
+                Book
+              </a>
+            </div>
+          </div>
+          <div
+            class="translate-y-full overflow-hidden rounded-lg bg-slate-950/90 opacity-0 transition-all delay-[1000ms] duration-1000"
+            data-scroll-animate="bottom"
+          >
+            <div class="aspect-video w-full overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1539667468225-eebb663053e6?q=80&w=2017&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="h-full w-full cursor-pointer object-cover transition-transform duration-300 hover:scale-125"
+              />
+            </div>
+            <div class="space-y-4 p-4">
+              <h3 class="text-2xl font-bold text-green-400">Oasis Retreat Package</h3>
+              <p>Indulge in the tranquility of the Galactic Oasis with a three-day getaway, featuring moonlit spa sessions and personalized celestial tours.</p>
+              <a
+                href="#packages"
+                class="ring-offset-background focus-visible:ring-ring border-input inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md border bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-green-400 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+              >
+                Book
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="grid min-h-[100dvh] place-items-center py-16">
+      <div class="absolute -z-10 h-full w-full bg-gradient-to-b from-slate-900 via-transparent to-slate-900"><span class="sr-only">gradient</span></div>
+      <img
+        class="absolute -z-20 h-full w-full select-none object-cover brightness-75"
+        draggable="false"
+        src="https://images.unsplash.com/photo-1520355091806-f3aede62cb0c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="container mx-auto space-y-4 px-4">
+        <h2 class="text-center text-4xl font-bold text-green-400">Reviews</h2>
+        <p class="text-center">Read what fellow travelers have to say about their moonlit escapades with Moonlight Odyssey. Your celestial adventure awaits!</p>
+        <div class="flex flex-wrap justify-center gap-4 [&>*]:basis-[max(30rem,(100%-2rem)/3)]">
+          <blockquote class="translate-y-full space-y-4 rounded-lg bg-slate-950/90 p-8 opacity-0 duration-1000" data-scroll-animate="bottom">
+            <p>"Moonlight Odyssey made my dream of touching the moon a reality. The experience was beyond words—truly otherworldly!"</p>
+
+            <footer class="flex gap-4">
+              <cite class="flex items-center gap-4">
+                <img
+                  src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  class="aspect-square rounded-full object-cover"
+                  width="48"
+                  height="48"
+                />
+                <span>Emily S.</span>
+              </cite>
+              <div class="flex items-center">
+                <span class="sr-only">Five Star Reviews</span>
+                <img src="https://cdn-icons-png.flaticon.com/128/10109/10109855.png" alt="" width="16" height="16" />
+                <img src="https://cdn-icons-png.flaticon.com/128/10109/10109855.png" alt="" width="16" height="16" />
+                <img src="https://cdn-icons-png.flaticon.com/128/10109/10109855.png" alt="" width="16" height="16" />
+                <img src="https://cdn-icons-png.flaticon.com/128/10109/10109855.png" alt="" width="16" height="16" />
+                <img src="https://cdn-icons-png.flaticon.com/128/10109/10109855.png" alt="" width="16" height="16" />
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="translate-y-full space-y-4 rounded-lg bg-slate-950/90 p-8 opacity-0 delay-300 duration-1000" data-scroll-animate="bottom">
+            <p>"The Galactic Oasis Retreat was a celestial paradise. The tranquility and beauty of the oasis left me in awe. A must for any lunar explorer!"</p>
+
+            <footer class="flex gap-4">
+              <cite class="flex items-center gap-4">
+                <img
+                  src="https://images.pexels.com/photos/2108845/pexels-photo-2108845.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                  alt=""
+                  class="aspect-square rounded-full object-cover"
+                  width="48"
+                  height="48"
+                />
+                <span>Alex M.</span>
+              </cite>
+              <div class="flex items-center">
+                <span class="sr-only">Five Star Reviews</span>
+                <img src="https://cdn-icons-png.flaticon.com/128/10109/10109855.png" alt="" width="16" height="16" />
+                <img src="https://cdn-icons-png.flaticon.com/128/10109/10109855.png" alt="" width="16" height="16" />
+                <img src="https://cdn-icons-png.flaticon.com/128/10109/10109855.png" alt="" width="16" height="16" />
+                <img src="https://cdn-icons-png.flaticon.com/128/10109/10109855.png" alt="" width="16" height="16" />
+                <img src="https://cdn-icons-png.flaticon.com/128/10109/10109855.png" alt="" width="16" height="16" />
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="translate-y-full space-y-4 rounded-lg bg-slate-950/90 p-8 opacity-0 delay-500 duration-1000" data-scroll-animate="bottom">
+            <p>"The Crater Canyons Explorer Package was an adventure of a lifetime. The lunar landscapes and starry nights are etched in my memory forever."</p>
+
+            <footer class="flex gap-4">
+              <cite class="flex items-center gap-4">
+                <img
+                  src="https://images.pexels.com/photos/2680937/pexels-photo-2680937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  class="aspect-square rounded-full object-cover"
+                  width="48"
+                  height="48"
+                />
+                <span>Sarah B.</span>
+              </cite>
+              <div class="flex items-center">
+                <span class="sr-only">Five Star Reviews</span>
+                <img src="https://cdn-icons-png.flaticon.com/128/10109/10109855.png" alt="" width="16" height="16" />
+                <img src="https://cdn-icons-png.flaticon.com/128/10109/10109855.png" alt="" width="16" height="16" />
+                <img src="https://cdn-icons-png.flaticon.com/128/10109/10109855.png" alt="" width="16" height="16" />
+                <img src="https://cdn-icons-png.flaticon.com/128/10109/10109855.png" alt="" width="16" height="16" />
+                <img src="https://cdn-icons-png.flaticon.com/128/10109/10109855.png" alt="" width="16" height="16" />
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="grid min-h-[100dvh] place-items-center bg-gradient-to-b from-transparent via-transparent to-slate-950 py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-center text-4xl font-bold text-green-400">Contact Us</h2>
+        <p class="text-center">
+          Have questions or ready to embark on your lunar journey? Contact our friendly team to assist you in planning the ultimate moon viewing trip.
+        </p>
+      </div>
+      <div class="container mx-auto translate-y-full space-y-4 px-4 duration-1000" data-scroll-animate="bottom">
+        <div class="flex items-start gap-8 max-md:flex-col-reverse [&>*]:flex-1">
+          <form action="" class="w-full space-y-4">
+            <div class="flex flex-col gap-2">
+              <label for="full-name">Full Name</label>
+              <input type="text" name="full-name" id="full-name" placeholder="Name" class="rounded-md text-black" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Email" class="rounded-md text-black" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="message">Massage</label>
+              <textarea name="message" id="message" rows="10" placeholder="Message" class="rounded-md text-black"></textarea>
+            </div>
+            <button
+              class="inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-green-400 px-4 py-2 text-sm font-medium ring-offset-white transition-colors hover:bg-green-600 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+            >
+              Send
+            </button>
+          </form>
+          <div>
+            <img
+              src="https://img.freepik.com/free-vector/city-map-top-view_1284-16662.jpg?w=1060&t=st=1700660856~exp=1700661456~hmac=8ff1a9642f3f951e5415e491aef784a9e89a76198ee1c14162ed82ad20e7e4ee"
+              alt=""
+              class="rounded-lg"
+            />
+          </div>
+        </div>
+        <ul class="flex flex-wrap justify-center gap-4 max-md:flex-col">
+          <li class="flex items-center gap-4">
+            <img src="https://cdn-icons-png.flaticon.com/128/6723/6723155.png" alt="" width="48" height="48" /> Address: 123 Celestial Lane, Lunar City
+          </li>
+          <li class="flex items-center gap-4">
+            <img src="https://cdn-icons-png.flaticon.com/128/901/901141.png" alt="Phone" width="48" height="48" /> Phone: (555) MOON-TRP
+          </li>
+          <li class="flex items-center gap-4">
+            <img src="https://cdn-icons-png.flaticon.com/128/8766/8766320.png" alt="" width="48" height="48" /> Email: info@moonlightodyssey.com
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer id="main-footer" class="grid place-items-center overflow-hidden bg-slate-950 py-16">
+      <div class="container mx-auto translate-y-full px-4 opacity-0 duration-1000" data-scroll-animate="bottom">
+        <nav id="footer-navbar" class="flex flex-wrap items-start justify-between gap-4 p-4 px-4 max-md:flex-col">
+          <div class="space-y-4">
+            <a href="/" id="logo" class="flex items-center gap-4 whitespace-nowrap">
+              <img src="https://cdn-icons-png.flaticon.com/128/1823/1823324.png" alt="Moonlight Odyssey Logo" width="48" height="48" />
+              <span class="font-bold md:text-4xl">Moonlight Odyssey</span>
+            </a>
+            <p>Moonlight Odyssey - Unveiling the Wonders of the Moon</p>
+            <p class="flex items-center gap-4">
+              <img src="https://cdn-icons-png.flaticon.com/128/6723/6723155.png" alt="" width="16" height="16" /> Address: 123 Celestial Lane, Lunar City
+            </p>
+            <p class="flex items-center gap-4">
+              <img src="https://cdn-icons-png.flaticon.com/128/901/901141.png" alt="Phone" width="16" height="16" /> Phone: (555) MOON-TRP
+            </p>
+            <p class="flex items-center gap-4">
+              <img src="https://cdn-icons-png.flaticon.com/128/8766/8766320.png" alt="" width="16" height="16" /> Email: info@moonlightodyssey.com
+            </p>
+          </div>
+
+          <ul class="space-y-4 whitespace-nowrap">
+            <li class="text-green-400">Navigation</li>
+            <li>
+              <a
+                href="/"
+                class="relative py-1 after:absolute after:bottom-0 after:left-[50%] after:h-[2px] after:w-0 after:bg-green-400 after:transition-[width_0.3s_ease_0s,left_0.3s_ease_0s] after:content-[''] hover:text-green-400 hover:after:left-0 hover:after:w-full"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#destinations"
+                class="relative py-1 after:absolute after:bottom-0 after:left-[50%] after:h-[2px] after:w-0 after:bg-green-400 after:transition-[width_0.3s_ease_0s,left_0.3s_ease_0s] after:content-[''] hover:text-green-400 hover:after:left-0 hover:after:w-full"
+                >Destinations</a
+              >
+            </li>
+            <li>
+              <a
+                href="#packages"
+                class="relative py-1 after:absolute after:bottom-0 after:left-[50%] after:h-[2px] after:w-0 after:bg-green-400 after:transition-[width_0.3s_ease_0s,left_0.3s_ease_0s] after:content-[''] hover:text-green-400 hover:after:left-0 hover:after:w-full"
+                >Packages</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="relative py-1 after:absolute after:bottom-0 after:left-[50%] after:h-[2px] after:w-0 after:bg-green-400 after:transition-[width_0.3s_ease_0s,left_0.3s_ease_0s] after:content-[''] hover:text-green-400 hover:after:left-0 hover:after:w-full"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="relative py-1 after:absolute after:bottom-0 after:left-[50%] after:h-[2px] after:w-0 after:bg-green-400 after:transition-[width_0.3s_ease_0s,left_0.3s_ease_0s] after:content-[''] hover:text-green-400 hover:after:left-0 hover:after:w-full"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <ul class="space-y-4 whitespace-nowrap">
+            <li class="text-green-400">Information</li>
+            <li>
+              <a
+                href="#"
+                class="relative py-1 after:absolute after:bottom-0 after:left-[50%] after:h-[2px] after:w-0 after:bg-green-400 after:transition-[width_0.3s_ease_0s,left_0.3s_ease_0s] after:content-[''] hover:text-green-400 hover:after:left-0 hover:after:w-full"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative py-1 after:absolute after:bottom-0 after:left-[50%] after:h-[2px] after:w-0 after:bg-green-400 after:transition-[width_0.3s_ease_0s,left_0.3s_ease_0s] after:content-[''] hover:text-green-400 hover:after:left-0 hover:after:w-full"
+                >Terms of Service</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative py-1 after:absolute after:bottom-0 after:left-[50%] after:h-[2px] after:w-0 after:bg-green-400 after:transition-[width_0.3s_ease_0s,left_0.3s_ease_0s] after:content-[''] hover:text-green-400 hover:after:left-0 hover:after:w-full"
+                >FAQs</a
+              >
+            </li>
+          </ul>
+          <ul class="space-y-4 whitespace-nowrap">
+            <li class="text-green-400">Source</li>
+            <li>
+              <a
+                href="https://www.flaticon.com"
+                target="_blank"
+                class="relative py-1 after:absolute after:bottom-0 after:left-[50%] after:h-[2px] after:w-0 after:bg-green-400 after:transition-[width_0.3s_ease_0s,left_0.3s_ease_0s] after:content-[''] hover:text-green-400 hover:after:left-0 hover:after:w-full"
+                >Flaticon</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com"
+                target="_blank"
+                class="relative py-1 after:absolute after:bottom-0 after:left-[50%] after:h-[2px] after:w-0 after:bg-green-400 after:transition-[width_0.3s_ease_0s,left_0.3s_ease_0s] after:content-[''] hover:text-green-400 hover:after:left-0 hover:after:w-full"
+                >Unsplash</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.freepik.com"
+                target="_blank"
+                class="relative py-1 after:absolute after:bottom-0 after:left-[50%] after:h-[2px] after:w-0 after:bg-green-400 after:transition-[width_0.3s_ease_0s,left_0.3s_ease_0s] after:content-[''] hover:text-green-400 hover:after:left-0 hover:after:w-full"
+                >Freepik</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pexels.com"
+                target="_blank"
+                class="relative py-1 after:absolute after:bottom-0 after:left-[50%] after:h-[2px] after:w-0 after:bg-green-400 after:transition-[width_0.3s_ease_0s,left_0.3s_ease_0s] after:content-[''] hover:text-green-400 hover:after:left-0 hover:after:w-full"
+                >Pexels</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <p class="pt-16 text-center">© 2023 Moonlight Odyssey. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
